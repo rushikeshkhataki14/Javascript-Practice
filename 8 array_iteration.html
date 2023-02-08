@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let movie = ["kantara", "drishyam", "bahubali", "jaiho"];
+    console.log(movie);
+    console.log(movie[0]);
+
+    for (i = 0; i < movie.length; i++) {
+      console.log("position of char:" + " " + i + " " + movie[i]);
+    }
+
+    // using function 
+    movie.forEach(function (value, index){
+      console.log(index + " " + value);
+    })
+
+
+    // using arrow function    
+    movie.forEach((value, index) => {
+      console.log(index + " " + value);
+    })
+
+    let no = [10, 20, 30, 40, 50];
+    no.forEach(function (value, index) {
+      console.log(index + " " + value);
+    })
+
+
+    //  map method
+    let no1 = [45, 65, 25, 78, 96, 32, 14];
+    console.log(no1);
+    let x = no1.map(function (value, index) {
+      return value * 2;
+    })
+    console.log(x);
+
+    let y = no1.map((value, index) => {
+      return value * 10;
+    })
+    console.log(y);
+
+
+    //  filter method
+    let age = [54, 25, 65, 85, 78, 96, 24, 18];
+    console.log(age);
+    let ageOver = age.filter(function (value, index) {
+      return value > 25;
+    })
+    console.log(ageOver);
+
+
+    //  reduce method
+    let no3 = [45, 12, 85, 25, 35, 36, 12];
+    console.log(no3);
+    let g = no3.reduce(function (value, total) {
+      return value + total;
+    })
+    console.log(g);
+
+    //  reduce-right method
+    let no4 = [45, 56, 85, 12, 54, 12, 78];
+    console.log(no4);
+    let e = no4.reduceRight(function (value, total) {
+      return value + total;
+    })
+    console.log(e);
+
+    
+    // every method
+    // ALLS are >20 then this is true
+    let no5 = [25, 85, 32, 45, 65, 75, 35, 54];
+    console.log(no5);
+    let q = no5.every(function (value, index) {
+      return value > 20;
+    })
+    console.log(q);
+
+
+    // some method
+    // The some() method checks if some array values pass a test.
+    let no6 = [45, 14, 18, 9, 4, 25, 21]
+    console.log(no6);
+    let d = no6.some(function (value, index) {
+      return value > 30;
+    })
+    console.log(d);
+
+
+    // indexOF
+    let fruit = ["apple", "orange", "banana", "mango"];
+    console.log(fruit);
+    let position = fruit.indexOf("apple") + 4;
+    console.log("Apple is found in position " + position);
+
+
+    // lastindexOF
+    let fruit1 = ["apple", "orange", "banana", "mango"];
+    console.log(fruit1);
+    let position1 = fruit1.lastIndexOf("banana") + 2;
+    console.log("banana is found in position " + position1 );
+
+
+    // find method
+    let no7 = [5,45,85,12,47,96,18];
+    console.log(no7); 
+    let t = no7.find(function(value,index){
+      return value>45;
+    })
+    console.log("First number over 45 is " + t);
+
+    
+    // findindex method
+    let no8 = [5,45,85,12,47,96,18];
+    console.log(no8);
+    let s = no8.findIndex(function(value,index){
+      return value>85;
+    })
+    console.log(s);
+
+
+    // from method
+    let str = ["abcdefg"];
+    console.log(str);
+
+    let str1 = Array.from(str);
+    console.log(str1);
+  </script>
+</body>
+</html>

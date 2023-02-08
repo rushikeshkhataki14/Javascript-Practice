@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = new Date();
+        a.setDate(31);
+        console.log(a);
+
+        let b = new Date();
+        b.setFullYear(2050);
+        console.log(b);
+
+        let c = new Date();
+        c.setHours(22);
+        console.log(c);
+
+        let d = new Date();
+        d.setMilliseconds(1000);
+        console.log(d);
+
+        let e = new Date();
+        e.setMinutes(59);
+        console.log(e);
+
+        let f = new Date();
+        f.setMonth(5);
+        console.log(f);
+
+        let g = new Date();
+        g.setSeconds(45);
+        console.log(g);
+    </script>
+
+    <p id="demo"></p>
+
+    <script>
+        let text;
+        const today = new Date();
+        const someday = new Date();
+        someday.setFullYear(2100, 0, 14);
+
+        if (someday > today) {
+            text = "Today is before January 14, 2100.";
+        } else {
+            text = "Today is after January 14, 2100.";
+        }
+        document.getElementById("demo").innerHTML = text;
+        
+        
+        let text2;
+        let today1 = new Date();
+        let someday1 = new Date();
+        someday1.setFullYear(2100, 0, 14);
+        
+        if (someday1 > today1){
+            text2 = "today is before january 14,2100.";
+        } else {
+            text2 = "today is after january 14, 2100.";
+        }
+        console.log(text2);
+    </script>
+</body>
+
+</html>

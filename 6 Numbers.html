@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let x = 3.25;
+        let y = 5;
+        document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+        let a = 123e5;
+        let b = 123e-5;
+        console.log(a + " " + b);
+    </script>
+
+
+<h2>integer precision</h2>
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+<script>
+    let c = 999999999999999;
+    let d = 9999999999999999;
+    console.log(c + " " + d);
+</script>
+
+
+<h2>floating precision</h2>
+<script>
+    let e = 0.2*10;
+    let f = 0.1*10;
+    console.log((e + f)/10);
+</script>
+
+
+
+<h2>adding numbers and strings</h2>
+<script>
+    let g = 14;
+    let h = 30;
+    let i = g + h;
+    console.log(i);
+
+    let j = "50";
+    let k = "40";
+    let l = j + k;
+    console.log(l);
+
+    let m = 50;
+    let n = "40";
+    let o = m + n;
+    console.log(o);
+
+    let p = 90;
+    let q = 100;
+    let r = p + q;
+    console.log("the result is :" + p + q); 
+    
+    let s = 50;
+    let t = 20;
+    let u = "70";
+    let result = s + t + u;
+    console.log(result);
+</script>
+
+
+<h2>Numeric string</h2>
+   <script>
+    let v = "100";
+    let w = "10";
+    let z = v /w;
+    console.log(z);
+
+    let no = "100";
+    let no1 = "10";
+    let no2 = no * no1;
+    console.log(no2);
+
+    let no3 = "100";
+    let no4 = "10";
+    let no5 = no3 - no4;
+    console.log(no5);
+
+    // --- this is not work -----
+
+    let no6 = "100";
+    let no7 = "10";
+    let no8 = no6 + no7;
+    console.log(no8);
+   </script>
+
+
+
+   <h2>nan(not a no)</h2>
+   <script>
+        console.log("apple"/100);
+
+        let ab = 100/"apple";
+        console.log(isNaN(ab));
+   </script>
+</body>
+</html>

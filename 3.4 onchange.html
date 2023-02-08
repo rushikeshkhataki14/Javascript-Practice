@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="year" onchange="changeyear()">
+        <option value="firstyear">firstyear</option>
+        <option value="secondyear">secondyear</option>
+        <option value="thirdyear">thirdyear</option>
+        <option value="finalyear">finalyear</option>
+    </select>
+    
+    <script>
+        function changeyear(){
+            let year = document.getElementById("year").value;
+            console.log("you selected year:"  + year);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = new Date();
+        console.log(a);
+
+        // new Date(date string)
+        // new Date(date string) creates a date object from a date string:
+        // in this string at it is print
+
+         let b = new Date("2022-05-31");
+         console.log(b); 
+
+
+        // JavaScript counts months from 0 to 11:
+
+        let c = new Date(1999, 04, 31, 07, 30, 24, 0);
+        console.log(c);
+
+
+       // Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+
+       let d = new Date(1999, 12, 31, 07, 30, 24, 0);
+        console.log(d);
+
+
+        // Specifying a day higher than max, will not result in an error but add the overflow to the next month:
+
+        let e = new Date(1999, 12, 32, 07, 30, 24, 0);
+        console.log(e);
+
+        
+        // You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+        
+        let f = new Date(60000); 
+        console.log(f);
+    </script>
+</body>
+
+</html>

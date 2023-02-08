@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <div id="mydiv">this is div</div>
+    <span id="myspan">this is span</span><br><br>
+    <input type="text" id="mytext"><br><br>
+    <button onclick="clicked()">click me</button>
+    <P></P>
+    <script>
+
+       function clicked(){
+          let div = document.getElementById("mydiv").innerHTML = "<b>changablediv</b>"
+
+          let text = document.getElementById("mytext").value = "Rushikesh"
+       }
+     
+    </script>
+</body>
+</html>

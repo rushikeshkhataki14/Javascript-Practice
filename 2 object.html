@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let rollno = 15;
+        // let age = 25;
+        // let name = "unknown";
+        // let add = "kolhapur";
+        // let grade = "A";
+        // let sub = "maths";
+        // console.log(rollno +  " " + age + " " + grade);
+
+        let student = { rollno: 15, age: 25, name: "unknown", add: "kolhapur", grade: "A", sub: "maths" };
+        console.log(student);
+        let student1 = { rollno: 150, age: 250, name: "unknown2", add: "kolhapur2", grade: "AB", sub: "maths2" };
+        console.log(student1);
+
+
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName + " " + this.id;
+            }
+        };
+        alert(person.fullName());
+
+
+
+    </script>
+</body>
+
+</html>

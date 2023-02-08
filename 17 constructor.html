@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let person = {
+        //     firstname: "rahul",
+        //     latname: "tripathi",
+        //     age: 25,
+        //     city: "kolhapur",
+        //     country: "indian",
+        //     sport: "cricket",
+        //     education: "be"
+        // }
+        // console.log(person);
+             
+
+        // let person1 = {
+        //     firstname: "rachel",
+        //     latname: "disouja",
+        //     age: 28,
+        //     city: "sangali",
+        //     country: "indian",
+        //     sport: "football",
+        //     education: "me"
+        // }
+        // console.log(person1);
+
+
+        function person(first,last,age,city,country,sport,education){
+                  this.firstname = first;
+                  this.lastname = last;
+                  this.age = age;
+                  this.city = city;
+                  this.country = country;
+                  this.sport = sport;
+                  this.education = education;
+        }
+
+        let x = new person("rahul","tripathi",25,"kolhapur","indian","cricket","me");
+        let y = new person("rohit","patil",28,"sangali","indian","football","be");
+
+        console.log(x);
+        console.log(y);
+        
+        // add element
+        x.gender = "male";
+        console.log(x);
+
+        y.language = "english";
+        console.log(y);
+        
+        
+
+        x.fullname = function(){
+            return this.firstname + " " + this.lastname;
+        }
+        console.log(x.fullname());
+
+
+
+        y.name = function(){
+            return this.age + " " + this.sport;
+        }
+        console.log(y.name());
+    </script>
+</body>
+
+</html>

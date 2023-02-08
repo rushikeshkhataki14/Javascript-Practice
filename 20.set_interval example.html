@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bigdiv {
+            height: 400px;
+            width: 400px;
+            position: relative;
+            background-color: yellow;
+        }
+
+        #smalldiv {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            background-color: red;
+        }
+
+        #smalldiv1 {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left:350px;
+            background-color: black
+        }
+
+        #smalldiv2 {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 350px;
+            bottom: 0;
+            background-color: chocolate
+        }
+        #smalldiv3{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            right: 350px;
+            bottom: 0;
+            background-color: darkblue
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigdiv">
+        <div id="smalldiv"></div>
+        <div id="smalldiv1"></div>
+        <div id="smalldiv2"></div>
+        <div id="smalldiv3"></div>
+
+    </div>
+    <button onclick="move()">click</button>
+
+    <script>
+        function move() {
+            pos = 0;
+            pos1 = 350;
+            pos2 = 350;
+            pos3 =350;
+           
+            
+           
+            let a = setInterval(anim, 10);
+            function anim() {
+                                    // 1st block
+                if (pos == 350) {
+                    clearInterval(a);
+                }
+                else {
+                    pos++;
+            let target = document.getElementById("smalldiv");
+
+                    target.style.top = pos + "px";
+                    target.style.left = pos + "px";
+                }
+
+              
+                // 2nd block
+            if (pos1 == 0) {
+                clearInterval(a);
+            }
+            else {
+                pos1--;
+                let target1 =document.getElementById("smalldiv1");
+                target1.style.left = pos1 + "px";
+                target1.style.bottom = pos1 + "px";
+            }
+
+
+            // 3rd block
+          if (pos2 == 0) {
+                clearInterval(a);
+            }
+            else {
+                pos2--;
+                let target2 = document.getElementById("smalldiv2")
+                target2.style.left = pos2 + "px";
+                target2.style.top = pos2 + "px";
+            }
+            
+
+            // 4th block
+        if (pos3 == 0) {
+                clearInterval(a);
+            }
+            else {
+                pos3--;
+                let target3 = document.getElementById("smalldiv3")
+                target3.style.right = pos3 + "px";
+                target3.style.top = pos3 + "px";
+            }
+        
+        }
+    }
+       
+     
+// 222
+
+        // let target1 = document.getElementById("smalldiv1");
+        // pos1 = 350;
+    
+        // let b = setInterval(anim, 10);
+        // function anim() {
+      
+        // }
+
+// 333
+
+        // let target2 = document.getElementById("smalldiv2");
+        // pos = 350;
+
+        // let c = setInterval(anim, 10);
+        // function anim() {
+
+       
+      
+        
+            
+
+    </script>
+</body>
+
+</html>

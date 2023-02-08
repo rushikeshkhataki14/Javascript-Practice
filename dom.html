@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="shoot()">click</button>
+
+    <p class="para">heading</p>
+    <p class="para">heading</p>
+    <p class="para">heading</p>
+    <p class="para">heading</p>
+    <p class="para">heading</p>
+    <h1 class="para">heading</h1>
+    <a href="" class="para">this is anchor</a>
+    <button onclick="changestyle()">click</button>
+
+    <h4>heading</h4>
+    <h4>heading</h4>
+
+    <h4>heading</h4>
+    <button onclick="clicked()">click</button>
+
+    <script>
+        function shoot(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+        function changestyle(){
+            let element = document.getElementsByClassName("para");
+            for(i=0;i<=element.length;i++)
+            {
+                element[i].style.color = "red";
+                element[i].style.fontSize = "22px";
+                //  element[i].style.padding = "100px";   
+            }
+        }
+
+        function clicked(){
+            let head = document.getElementsByTagName("h4");
+            // head[0].style.backgroundColor = "yellow";
+            // head[1].style.backgroundColor = "orange";
+            // head[2].style.backgroundColor = "red";
+            for(i=0;i<head.length;i++)
+            {
+                head[i].style.backgroundColor = "yellow";
+            }
+        }
+
+        let str = "sury akant";
+        document.write(str);
+        for(i=0;i<str.length;i++)
+          {
+            document.write("<br>");
+            document.write("position of char is:" + i + "" + str[i]);
+          }  
+    </script>
+</body>
+</html>

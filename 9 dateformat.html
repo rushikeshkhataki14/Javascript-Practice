@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //JavaScript ISO Dates
+        //The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:
+        let a = new Date("2022-12-12");
+        console.log(a);
+
+        //ISO Dates (Year and Month)
+        let b = new Date("2022-12");
+        console.log(b);
+
+        //ISO Dates (Only Year)
+        let c = new Date("2022");
+        console.log(c);
+
+        //ISO Dates (Date-Time)
+        // Date and time is separated with a capital T.
+        // UTC time is defined with a capital letter Z.
+        // If you want to modify the time relative to UTC, remove the Z and add + HH:MM or - HH:MM instead:
+        let d = new Date("2022-12-12T12:00:00Z")
+        console.log(d);
+
+        let e = new Date("2022-12-12T10:00:00-00:00");
+        console.log(e);
+
+
+        //JavaScript Short Dates.
+        //Short dates are written with an "MM/DD/YYYY" syntax like this:
+        let f = new Date("12/12/2022");
+        console.log(f);
+       
+
+       // JavaScript Long Dates.
+        //Long dates are most often written with a "MMM DD YYYY" syntax like this:
+        let g = new Date("12 december 2022")
+        console.log(g);
+
+        
+        
+        
+    </script>
+</body>
+
+</html>
